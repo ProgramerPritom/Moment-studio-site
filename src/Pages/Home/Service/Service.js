@@ -1,9 +1,20 @@
 import { } from 'bootstrap';
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { Navigate, useNavigate } from 'react-router-dom';
 
-const Service = (props) => {
-    const {name,price,description,img} = props.service;
+
+const Service = ({service}) => {
+    const {id,name,price,description,img} = service;
+    const navigate = useNavigate()
+    const handleServiceBtn = (id) =>{
+        
+        navigate(`/service/${id}`);
+        // console.log(e);
+        
+    }
+    
+
     return (
         <div>
             <div className="service-card">
@@ -15,7 +26,7 @@ const Service = (props) => {
             {description}
             </Card.Text>
             <p>Price: $<span>{price}</span></p>
-            <Button variant="primary">Book a Day</Button>
+            <Button onClick={() => handleServiceBtn(id)} variant="primary">Book a Day</Button>
         </Card.Body>
         </Card>
             </div>
