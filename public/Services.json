@@ -1,0 +1,13 @@
+[
+    {"id" : 1, "name" : "Festival Event", "price" : 300, "description" : "A festival is an event ordinarily celebrated by a community and centering on some characteristic aspect of that community and its religion or cultures. It is often marked as a local or national holiday, mela, or eid.", "img" : "https://i.ibb.co/rtqPTf3/Festival-Event.jpg"},
+
+    {"id" : 2, "name" : "Birthday Event", "price" : 200, "description" : "Birthdays are the best kind of celebration. It has been another year of life for your or your loved one and that is certainly reason to party.", "img" : "https://i.ibb.co/cD6vdjP/Birthday-Event.jpg"},
+
+    {"id" : 3, "name" : "Weddings Event", "price" : 700, "description" : "Wedding Events Wedding days are the big day in the couple's life. If you have experienced the event going through process, then you must know about the huge responsibility behind it. The bride and groom are relying upon you for their very big day.", "img" : "https://i.ibb.co/Kmj0tGb/Wedding-Event.jpg"},
+
+    {"id" : 4, "name" : "School Event", "price" : 560, "description" : "Annual Event function is favourite for all Students and Teachers. Every organises Try to remember that special day.We are try to catch that special moment. ", "img" : "https://i.ibb.co/v4F8tFz/School-Event.jpg"},
+
+    {"id" : 5, "name" : "Parties Event", "price" : 800, "description" : "Looking to celebrate your next special occasion with a big party? Capture every moment to remember with friends and family? we are offer to provide that.", "img" : "https://i.ibb.co/HNBGwhF/Parties-event.jpg"},
+
+    {"id" : 6, "name" : "Trade Event", "price" : 500, "description" : "New cultures are built on new practices. Here, we take a look at some traditional festivals around the world that serve as a good excuse to unveil new ways of thinking about a city and, as a result, to see great architectural works.", "img" : "https://d3emaq2p21aram.cloudfront.net/media/cache/venue_roundup_single_image_flex/uploads/%200Regular_Roundup/2018/5-May/WorldFestivals/LaTomatina-HeinoKalis-01.jpg"}
+]
