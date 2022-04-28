@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
 import SocialLink from '../../Shared/SocialLink/SocialLink';
 import Loading from '../Loading/Loading';
@@ -18,7 +20,10 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
 
-      if (loading) {
+      const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(auth);
+
+
+      if (loading || sending) {
           return <Loading></Loading>
       };
 
@@ -26,7 +31,7 @@ const Login = () => {
           navigate('/home');
       };
       let errorMsg;
-      if (error) {
+      if (error || error1) {
           errorMsg = error.message;
       }
 
@@ -40,6 +45,16 @@ const Login = () => {
 
 
 
+    };
+    const handleForgotPassword = async () =>{
+        const email = emailRef.current.value;
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Send Email in Inbox');
+        }else{
+            toast('Enter Email address first');
+        }
+        
     }
 
     const handleGoRegister = () =>{
@@ -71,8 +86,9 @@ const Login = () => {
             <p className='text-center text-danger'>Error Found: {errorMsg}</p>
             : ""}
         <p className='acount-text text-center my-2'>New in moment agency family? <span className='text-account text-primary' onClick={handleGoRegister}>Create an Account first</span></p>
-        <p className='acount-text text-center my-2'>Forgot your password? <span className='text-account text-danger'>Get Password</span></p>
+        <p className='acount-text text-center my-2'>Forgot your password? <span className='text-account text-danger' onClick={handleForgotPassword}>Get Password</span></p>
         <SocialLink></SocialLink>
+        <ToastContainer />
     </Form>
             </div>
         </div>
