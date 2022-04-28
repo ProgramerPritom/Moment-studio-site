@@ -26,7 +26,7 @@ const Register = () => {
     }
 
     if (user) {
-        navigate('/home');
+        navigate('/login');
     }
 
     const handleSubmitRegister = e =>{
@@ -35,7 +35,9 @@ const Register = () => {
         const email = refEmail.current.value;
         const password = refPassword.current.value;
         createUserWithEmailAndPassword(email,password);
-
+        if (email) {
+            
+        }
     }
 
     const handleGoLogin = () =>{
