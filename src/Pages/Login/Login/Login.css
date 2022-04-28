@@ -1,0 +1,9 @@
+.acount-text{
+   font-size: 22px;
+}
+.acount-text span{
+    font-weight: 500;
+}
+.text-account{
+    cursor: pointer;
+}
