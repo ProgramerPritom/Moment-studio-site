@@ -1,10 +1,17 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import camera from '../../../images/camera.png';
 import './Header.css';
 
 const Header = () => {
+  const [user] = useAuthState(auth);
+  const handleSignOut = () =>{
+    signOut(auth);
+  }
     return (
         <div>
             <div className="nav-area">
@@ -23,9 +30,12 @@ const Header = () => {
       
     </Nav>
     <Nav>
-      <Nav.Link as={Link} to='/login'>
+      {
+        user? <Button onClick={handleSignOut} className="signOutBtn" variant="link">Sign Out</Button> 
+        :
+        <Nav.Link as={Link} to='/login'>
         Login
-      </Nav.Link>
+      </Nav.Link>}
     </Nav>
   </Navbar.Collapse>
   </Container>

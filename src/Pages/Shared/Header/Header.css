@@ -1,3 +1,12 @@
 .logo-header{
     width: 12%;
 }
+.signOutBtn{
+    text-decoration: None;
+    color: white;
+    border: 2px solid rgb(241, 171, 183);
+    padding: 3px 8px 3px 8px !important;
+}
+.signOutBtn:hover{
+    color: pink;
+}
