@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <div>
             <div className="nav-area">
-            <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
+            <Navbar sticky='top' collapseOnSelect expand="lg" bg="primary" variant="dark">
   <Container>
   <Navbar.Brand as={Link} to='/'>
       <img className='logo-header' src={camera} />

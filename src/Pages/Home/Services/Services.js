@@ -14,7 +14,7 @@ const Services = () => {
     
     return (
         <div>
-            <div className="services-area my-3">
+            <div id='services' className="services-area my-3">
                 <div className="services-text text-center my-2">
                     <h1>Our Focus Services</h1>
                     

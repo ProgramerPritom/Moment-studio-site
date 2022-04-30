@@ -1,0 +1,14 @@
+.about-picture-area img{
+    padding: 10px;
+    border-radius: 200px;
+    /* text-align: center; */
+}
+.personal-details h4{
+    
+    border-bottom: 2px solid gray;
+    display: inline;
+}
+.personal-details p{
+    margin-bottom: 0px;
+    padding: 7px;
+}
