@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-4 text-center mt-3">
                         <h4>Moment Studio Agency</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel debitis unde, recusandae aut tempore amet.</p>
+                        <p>Personal Photograpy agency. Remind to special event photographer.</p>
                         <p><span>Copyrights by Moment Agency &copy; 2022</span></p>
 
                     </div>

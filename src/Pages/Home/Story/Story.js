@@ -23,7 +23,7 @@ const Story = () => {
                 <div className="col-md-6 text-center my-5 text-white">
                     <p>Get Started</p>
                     <h3>Make your Wedding a Wonderful story.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat non sapiente inventore, numquam ratione consectetur!</p>
+                    <p>Create Perfect moment caption for your perfect event.caption one or more than one picture to remember that time and special event that you can memories every time.</p>
                     <Button>Get a Package</Button>
                 </div>
                     </div>

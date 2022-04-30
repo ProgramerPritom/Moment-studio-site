@@ -1,4 +1,39 @@
-# Getting Started with Create React App
+
+# Moment studio Agency
+
+### Github link
+go to [GitHub link](https://github.com/programming-hero-web-course-4/independent-service-provider-ProgramerPritom)
+
+### Live site Link 
+go to [Live view Site]()
+
+## Features
+- Responsive Navbar
+- Slider
+- Banner
+- Services
+- Footer
+
+## List of technologies
+
+- React
+- React-Bootstrap
+- Firebase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +102,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
